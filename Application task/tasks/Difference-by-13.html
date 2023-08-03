@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task.css/date.css">
+    </head>
+    <body>
+        <div id="container2">
+          <div class="contaner1">
+            <div class="header">
+                <h1>Difference Calculator</h1>
+            </div>
+            <div class="container">
+                <p>Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.</p>
+                <div>
+                    <label for="numberInput">
+                        <h2>Enter the Number</h2>
+                    </label>
+                    <input type="number"  id="numberInput"/>
+                   </br>
+                   </br>
+                    <button onclick="calculateDifference()">calculate</button>
+                    <div id="result"></div>
+                </br>
+                </div>
+            </div>
+          </div>
+          <script>
+            function calculateDifference(){
+                var number = parseInt(document.getElementById("numberInput").value);
+                var difference = Math.abs(number-13);
+                if(number>13){
+                    difference *=2;
+                }
+                document.getElementById("result").innerHTML = "The difference is:" + + difference;
+            }
+          </script>
+        </div>
+    </body>
+</html>

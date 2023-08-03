@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task.css/url.css">
+    </head>
+    <body>
+        <div id="container2">
+            <div class="container1">
+                <div class="header">
+                    <h1>Get URL</h1>
+                </div>
+                <div class="container">
+                    <p>Write a JavaScript program to get the website URL.</p>
+                    <div>
+                        <button onclick="displayURL()">Get URL</button>
+                        <p id="result"></p>
+                        <script>
+                            window.addEventListener('load', displayURL);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function displayURL() {
+                    var windowURL = window.location.href;
+                    var resultElement = document.getElementById("result");
+                    resultElement.textContent = windowURL;
+                }
+            </script>
+        </div>
+    </body>
+</html>

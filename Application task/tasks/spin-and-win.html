@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="task.css/spin.css"> 
+    </head>
+    <body>
+        <div id="container2">
+            <div class="container1">
+                <div class="header">
+                    <h1>Spin and Win</h1>
+                </div>
+                <div class="container">
+                    <p>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".</p>
+                    <div>
+                        <p><b>Enter the  number between 1 and 10:</b></p>
+                        <input type="number" id="guess"/>
+                       </br>
+                       </br>
+                         <button onclick="guessNumber()">Check</button>
+                          <p id="result"></p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function guessNumber(){
+                    var randomNumber = Math.floor(Math.random()*10)+1;
+                    var userGuess = parseInt(document.getElementById("guess").value);
+                    if(userGuess===randomNumber){
+                        document.getElementById("result").innerHTML = "Good Work!";
+                    }
+                    else{
+                        document.getElementById("result").innerHTML = "Not Matched.The number was " +randomNumber;
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

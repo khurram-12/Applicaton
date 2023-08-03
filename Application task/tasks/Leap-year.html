@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task.css/leap.css">
+    </head>
+    <body>
+        <div id="container2">
+            <div class="container1">
+                <div class="header">
+                    <h1>Leap Year Calculator</h1>
+                </div>
+                  <div class="container">
+                    <p>Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.</p>
+                    <div>
+                        <label for="yearInput">
+                            <p><b>Enter a Year</b></p>
+                        </label>
+                        <input type="text"  id="yearInput"></br></br>
+                        <button onclick="checkLeapYear()">check</button>
+                        <p id="result"></p>
+                    </div>
+                  </div>
+            </div>
+            <script>
+                function checkLeapYear() {
+                    var year = parseInt(document.getElementById("yearInput").value);
+                    var resultElement = document.getElementById("result");
+                    if (year % 4 === 0 && (year % 100 !== 0 || year % 400 ===0)){
+                        resultElement.innerHTML = year + " is a leap year.";
+                    }else{
+                        resultElement.innerHTML = year + " is not a leap year.";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

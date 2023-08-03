@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="task.css/calculate.css">
+    </head>
+    <body>
+        <div id="container2">
+            <div class="container1">
+                <div class="header">
+                    <h1>Multiplication and Division</h1>
+                </div>
+                <div class="container">
+                    <p>Write a JavaScript program to calculate multiplication and division of two numbers (input from user).</p>
+                    <div>
+                        <label for="num1">
+                            <p><b>Enter number 1</b></p>
+                        </label>
+                        <input type="number" id="num1"><br><br>
+                        <label for="num2">
+                            <p><b>Enter number 2</b></p>
+                        </label>
+                        <input type="number" id="num2"><br><br>
+                        <button onclick="calculate()">Calculate</button><br><br>
+                        <div id="resultMultiplication"></div>
+                        <div id="resultDivision"></div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function calculate() {
+                var num1 = parseFloat(document.getElementById("num1").value);
+                var num2 = parseFloat(document.getElementById("num2").value);
+                var multiplication = num1 * num2;
+                var division = num1 / num2;
+                document.getElementById("resultMultiplication").innerHTML = "Multiplication: " + multiplication;
+                document.getElementById("resultDivision").innerHTML = "Division: " + division;
+                }
+            </script>
+        </div>
+    </body>
+</html>

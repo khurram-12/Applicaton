@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="task.css/date.css">
+</head>
+
+<body>
+<div id="container2">
+  <div class="container1">
+    <div class="header">
+      <h1>Display Date</h1>
+    </div>
+    <div class="container">
+      <p>Write a JavaScript program to display the current day and time in the following format.</p>
+      <p>Sample Output : Today is : Tuesday.</p>
+      <p>Current time is : 10 PM : 30 : 38</p>
+<div class = 'timeday'>
+  <p id="day"></p>
+      <p id="time"></p>
+</div>
+      
+    </div>
+  </div>
+    <script>
+      function displayDateTime() {
+        var space = " ";
+        var today = new Date();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var day = daylist[today.getDay()];
+        console.log(day)
+        var hours = today.getHours();
+        var min = today.getMinutes();
+        var sec = today.getSeconds();
+
+        var ampm = hours >= 12 ? 'PM' : ' Am';
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        hours = (hours<10)? '0'+hours:hours;
+        min = (min<10)? '0'+min:min;
+        sec = (sec<10)? '0'+sec:sec;
+         
+         var timestring = hours + '' + ampm +space + ':'+space + min +space + ':' +space  + sec;
+        console.log(timestring)
+        document.getElementById("day").innerHTML = `Today is:  ${day}`;
+        document.getElementById("time").innerHTML = `current time : ${timestring}`;
+      }
+     setInterval (displayDateTime, 1000);
+    </script>
+  </div>
+</body>
+
+</html>

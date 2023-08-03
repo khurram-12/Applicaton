@@ -1,0 +1,65 @@
+{
+    "tasks":[
+      {
+        "id":1,
+        "name":"Display date",
+        "pathname":"display-date.html",
+        "author":"khurram"
+      },
+      {
+       "id":2,
+       "name":"Spin and win",
+       "pathname":"spin-and-win.html",
+       "author":"khurram"
+      },
+      {
+        "id":3,
+        "name":"Multiply Divide",
+        "pathname":"multiply-divide.html",
+        "author":"khurram"
+      },
+      {
+        "id":4,
+        "name":"Date formate",
+        "pathname":"Date-formate.html",
+        "author":"khurram"
+      },
+      {
+        "id":5,
+        "name":"Area of triangle",
+        "pathname":"Area-of-Triangle.html",
+        "author":"khurram"
+      },
+      {
+        "id":6,
+        "name":"Differnce by 13",
+        "pathname":"Difference-by-13.html",
+        "author":"khurram"
+      },
+      {
+        "id":7,
+        "name":"Convert temperature",
+        "pathname":"Convert-temperature.html",
+        "author":"khurram"
+      },
+      {
+        "id":8,
+        "name":"Chrismates days left",
+        "pathname":"Christmas-days-left.html",
+        "author":"khurram"
+      },
+      {
+        "id":9,
+        "name":"Leap yaer",
+        "pathname":"Leap-year.html",
+        "author":"khurram"
+      },
+      {
+        "id":10,
+        "name":"Get url",
+        "pathname":"Get-URL.html",
+        "author":"khurram"
+      }
+      
+    ]
+  }
